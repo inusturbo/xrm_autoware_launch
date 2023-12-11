@@ -21,7 +21,9 @@
     <arg name="objects_filter_method" value="$(var detected_objects_filter_method)"/>
     <arg name="objects_validation_method" value="$(var detected_objects_validation_method)"/>
     <arg name="data_path" value="$(var data_path)"/>
-
+    <arg name="image_raw0" default="/sensing/camera/camera0/image_rect_color" description="image raw topic name"/>
+    <arg name="camera_info0" default="/sensing/camera/camera0/camera_info" description="camera info topic name"/>
+    <arg name="detection_rois0" default="/perception/object_recognition/detection/rois0" description="detection rois output topic name"/>
     <!-- object recognition -->
     <arg
       name="object_recognition_detection_euclidean_cluster_param_path"
